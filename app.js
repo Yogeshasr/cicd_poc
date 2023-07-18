@@ -9,4 +9,5 @@ app.get("/test", (req, res) => {
   res.send("test page");
 });
 
-app.listen(8080, console.log("server is running on 5500"));
+const port = process.env.port || 8080;
+app.listen(port, console.log("server is running on 5500"));
